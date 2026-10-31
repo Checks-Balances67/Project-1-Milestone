@@ -7,27 +7,58 @@ html
     <meta name="viewport" content="width=device-width, initial-scale=1.O">
     <title>Home - Professional Portfolio</title>
 
-    <!-- Google Fonts Pairing: Montserrat (Headings) & Open Sans (Body)
+    <!-- Google Fonts Pairing: Inter (Headings) & Sans-serif (Body)
     <link rel="preconnect" href="https://googleapis.com>
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https//googleapis.com/css2?family=Montserrat:wght@600;700&family=Open +Sans:weight@400;600&display=sawp" rel="stylesheet">
+    <link href="https//googleapis.com/css2?family=Inter:wght@600;700&family=Sans-serif:weight@400;600&display=sawp" rel="stylesheet">
     
-    <!-- Tour connected CSS File -->
+    <!-- Linked External CSS File -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Shared Navigation -->
-    <header>
-        <h1>My Professional Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="project.html">Projects/Work</a></li>
-                <li><a href="about.html">About/Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Header Section (ID Selector Examole) -->
+    <header id="main-header">
+        <div class-"container navbar>
+            <span class="logo">DevPortfolio</span>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
+
+    <main class="containeer">
+        <!-- Hero / About Section -->
+        <section id="about" class="hero-section">
+            <h1>Hello, I'm a Web Developer</h1>
+            <p>I build clean,responsive, and highly functional web applications using modern standards</p>
+        </section>
+
+        <!Multi-Column Projects Section (Flexbox/Grid Example)
+        <section id="projects">
+            <h2>Featured Work</h2>
+            <div class="project-grid">
+                <!-- Project Card 1 -->
+                <article class="card">
+                    <h3>E-Commerce Platform</h3>
+                    <p>A full-featured digital storefront built with optimized frontend architectures.</p>
+                    <a href="#" class="btn"View Project</a>
+               </article>
+
+               <!-- Project Card 2 -->
+                <article class="card">
+                    <h3>Task Management Tool</h3>
+                    <p>A responsive productivity application featuring custom drag-and drop mechanics.</p>
+                    
+               <!-- Project Card 3 -->
+              <article class="card">
+                  <h3>Interactive Dashboard</h3>
+                  <p>Real-time data visualization layout built strictly to fluid grid frameworks.</p>
+                  <a href="#" class="btn"View Project</a>
+             </article>  
+        </div>
 
     <!-- Main Content Area -->
     <main>
