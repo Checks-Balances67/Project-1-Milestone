@@ -110,4 +110,30 @@ margin-bottom: var(--space-4);
 .card {
   background-color: var(--bg-white);
   padding: var(--space-3); /*24px internal padding*/
+  border-radius: var(--space-1);
+  border: 1px solid #e5e7eb;
+}
+
+.footer {
+     text-align: center;
+     padding: var(--space-3);
+     color var(--text-light);
+     font-size: 0.875rem
+}
+
+  /*==============================================================================================================
+  3.   RESPONSIVENESS BREAKPOINTS
+  ===============================================================================================================*/
+
+  /*Mobile Base View: Covered by default styles down to 320px*/
+  @media (min-width: 320px) {
+    body {
+        font-size: 14px;
+    }
+  }
+  /* Tablet View Breakpoint: 768px */
+  @media (min-width: 768px) {
+      body {
+          font-size: 16px;
+      }
   
