@@ -82,3 +82,32 @@ h1, h2, h3 {
 }
 /*Main Sections Layout*/
 .hero {
+text-align: center;
+padding: var(--space-6)var(--space-2); /* 48px top/bottom, 16px sides*/
+background-color: var(--bg-white);
+margin-bottom: var(--space-4);
+}
+
+.hero p {
+   color: var(--text-light
+   max-width: 600px;
+   margin: 0 auto;
+              }
+
+.content-section {
+     width: 90%;
+     max-width: 1100px;
+     margin: 0 auto var(--space-6) auto;
+   }
+
+/* MULTI-COLUMN SECTION (CSS Grid) */
+.card-grid {
+  display: grid;
+  grid-template-columns:1fr; /* Default mobile single column*/
+  gap: var(--space-3); /* 24px gutter */
+}
+
+.card {
+  background-color: var(--bg-white);
+  padding: var(--space-3); /*24px internal padding*/
+  
