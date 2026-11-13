@@ -18,7 +18,7 @@ CSS
 --space-5: 40px;
 }
 /*Base resets to clear default unstyled browser output*/
-{
+color: var(text-dark);
 margin: 0;
 padding: 0;
 box-sizing; border-box;
