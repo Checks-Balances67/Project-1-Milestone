@@ -136,4 +136,23 @@ margin-bottom: var(--space-4);
       body {
           font-size: 16px;
       }
+
+      /* Change Grid to 2 columns on tablets */
+      .card-grid {
+           grid-template-columns: repeat(2, 1fr);
+      }
+  }
+
+  /* DesktopView Breakpoint: 1024px */
+  @media (min-width: 1024px){
+    /* ChangeGrid to 3 columns on desktops */
+    .card-grid {
+         grid-template-columns: repeat (3, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 2.5rem:
+    }
+}
+      
   
