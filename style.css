@@ -48,7 +48,7 @@ h1, h2, h3 {
 }
 
 /*CLASS SELECTORS*/
-.header-container {
+header-container {
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
@@ -57,64 +57,64 @@ h1, h2, h3 {
   align-items: center;
 }
 
-.logo {
+logo {
   color: var(--primary-color);
   font-family: 'Poppins', san-serif;
   font-size: 1.25rem;
   font-weight: 700;
 }
 
-.nav-links {
+nav-links {
   
     display: flex;
     list-style: none;
     gap: var(--space-3);/* 24px spacing*/
 }
 
-.nav-links a {
+nav-links a {
     color: var(--text-light);
     text-decoration: none;
     font-weight: 500;
 }
 
-.nav-linksa:hover {
+nav-linksa:hover {
     color: var(--primary-color);
 }
 /*Main Sections Layout*/
-.hero {
+hero {
 text-align: center;
 padding: var(--space-6)var(--space-2); /* 48px top/bottom, 16px sides*/
 background-color: var(--bg-white);
 margin-bottom: var(--space-4);
 }
 
-.hero p {
+hero p {
    color: var(--text-light);
    max-width: 600px;
    margin: 0 auto;
               }
 
-.content-section {
+content-section {
      width: 90%;
      max-width: 1100px;
      margin: 0 auto var(--space-6) auto;
    }
 
 /* MULTI-COLUMN SECTION (CSS Grid) */
-.card-grid {
+card-grid {
   display: grid;
   grid-template-columns:1fr; /* Default mobile single column*/
   gap: var(--space-3); /* 24px gutter */
 }
 
-.card {
+card {
   background-color: var(--bg-white);
   padding: var(--space-3); /*24px internal padding*/
   border-radius: var(--space-1);
   border: 1px solid #e5e7eb;
 }
 
-.footer {
+footer {
      text-align: center;
      padding: var(--space-3);
      color var(--text-light);
@@ -138,7 +138,7 @@ margin-bottom: var(--space-4);
       }
 
       /* Change Grid to 2 columns on tablets */
-      .card-grid {
+      card-grid {
            grid-template-columns: repeat(2, 1fr);
       }
   }
@@ -150,7 +150,7 @@ margin-bottom: var(--space-4);
          grid-template-columns: repeat (3, 1fr);
     }
 
-    .hero h1 {
+    hero h1 {
         font-size: 2.5rem:
     }
 }
