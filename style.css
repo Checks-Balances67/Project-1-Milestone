@@ -146,7 +146,7 @@ footer {
   /* DesktopView Breakpoint: 1024px */
   @media (min-width: 1024px){
     /* ChangeGrid to 3 columns on desktops */
-    .card-grid {
+     card-grid {
          grid-template-columns: repeat (3, 1fr);
     }
 
