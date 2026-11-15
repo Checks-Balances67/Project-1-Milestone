@@ -16,7 +16,7 @@
 --space-4: 32px;
 --space-5: 40px;
 }
-{
+*{
 /*Base resets to clear default unstyled browser output*/
 color: var(text-dark);
 margin: 0;
