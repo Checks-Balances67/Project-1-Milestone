@@ -57,7 +57,7 @@ header-container {
   align-items: center;
 }
 
-logo {
+.logo {
   color: var(--primary-color);
   font-family: 'Poppins', san-serif;
   font-size: 1.25rem;
@@ -81,14 +81,14 @@ nav-linksa:hover {
     color: var(--primary-color);
 }
 /*Main Sections Layout*/
-hero {
+.hero {
 text-align: center;
 padding: var(--space-6)var(--space-2); /* 48px top/bottom, 16px sides*/
 background-color: var(--bg-white);
 margin-bottom: var(--space-4);
 }
 
-hero p {
+.hero p {
    color: var(--text-light);
    max-width: 600px;
    margin: 0 auto;
@@ -101,20 +101,20 @@ content-section {
    }
 
 /* MULTI-COLUMN SECTION (CSS Grid) */
-card-grid {
+.card-grid {
   display: grid;
   grid-template-columns:1fr; /* Default mobile single column*/
   gap: var(--space-3); /* 24px gutter */
 }
 
-card {
+.card {
   background-color: var(--bg-white);
   padding: var(--space-3); /*24px internal padding*/
   border-radius: var(--space-1);
   border: 1px solid #e5e7eb;
 }
 
-footer {
+.footer {
      text-align: center;
      padding: var(--space-3);
      color var(--text-light);
