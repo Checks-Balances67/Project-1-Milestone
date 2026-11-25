@@ -1,158 +1,157 @@
-/*=================================================================================================================
-1. STYLING & SYSTEM SETTINGS (Color Palette, Fonts & Variables)
-=================================================================================================================*/
-:root {
-  /* Color Palette*/
-  --primary-color: #3b8256;
-  --secondary-color: #1e3a8a;
-  --text-main: #1f2937;
-  --bg-light: #4b5563;
-  --text-light: #ffffff;
-
-/*8px Base Spaciing System*/
---space-1: 8px;
---space-2: 16px;
---space-3: 24px;
---space-4: 32px;
---space-5: 40px;
-}
+/* Base & Typography (Type Selectors) */
 *{
-/*Base resets to clear default unstyled browser output*/
-color: var(text-dark);
-margin: 0;
-padding: 0;
-box-sizing; border-box;
-}
-body {
-  font-family: 'Inter', sans-serif; /* Body Font*/
-  background-color: var(--bg-light);
-  color: var(--text-dark);
-  line-height: 1.5;
-}
-
-/* TYPE SELECTORS*/
-h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif; */ Google Font for Headers*/
+  box-sizing: border-box;
   margin: 0;
-  color: var(--secondary-color);
-}
-/*===============================================================================================================
-2. LAYOUTS & COMPONENTS
-===============================================================================================================*/
-
-/* ID SELECTOR REQUIREMENT*/
-#main-header {
-  background-color: var(---bg-white);
-  box-shadow: 0 2px 4px rgba(0,0,0,0,.05);
-  padding: var(--space-2) 0;
+  padding: 0;
 }
 
-/*CLASS SELECTORS*/
-.header-container {
-  width: 90%;
-  max-width: 1100px;
-  margin: 0 auto;
+body {
+  font-family: 'Inter', san serif;
+  background-color: #f4f5f7;
+  color: #1f2937
+  line-height:1.6;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight 700;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top 16px;
+  margin-bottom: 8px;
+}
+
+ul {
+  padding-left: 24px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+code {
+  background-color: #e5e7eb;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* Header & Navigation (ID & Class Selectors) */
+#course-header {
+  background color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding 24px 32px 0;
+}
+
+.nav-tabs {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  list-style: none;
+  padding-left: 0;
 }
 
-.logo {
-  color: var(--primary-color);
-  font-family: 'Poppins', san-serif;
-  font-size: 1.25rem;
+.nav-tabs li {
+  margin-bottom: 0;
+}
+.nav-tabs a {
+  display: inline-block;
+  text-decoration: none;
+  color #4b5563;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding-bottom: 12px;
+  border-bottom: 2px solid transparent;
+}
+/* Main Content Area */
+#main-content {
+  max-width: 960px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+.assignment-card {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px
+  padding: 24px;
+}
+
+.question-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px
+  margin-bottom: 16px;
+}
+
+.question-badge {
+  color: 32563eb;
   font-weight: 700;
 }
 
-.nav-links {
+.question-type {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.intro-text,
+.submission-note {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.rubric-toggle {
+  margin-top: 8px;
+  margin-bottom: 24px;
+  color: #2563eb;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* Form Input */
+#repo-response {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: #111837;
+  resize: vertical;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  #course-header {
+    padding: 16px 16px 0;
+  }
+
+  .nav-tabs {
+    gap: 16px;
+  }
+}
+@media (max-width: 480px){
+  .assignment-card {
+    padding: 16px;
+  }
+
+  nav-tabs {
+    gap: 12px;
+  }
+}
   
-    display: flex;
-    list-style: none;
-    gap: var(--space-3);/* 24px spacing*/
-}
-
-.nav-links a {
-    color: var(--text-light);
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.nav-linksa:hover {
-    color: var(--primary-color);
-}
-/*Main Sections Layout*/
-.hero {
-text-align: center;
-padding: var(--space-6)var(--space-2); /* 48px top/bottom, 16px sides*/
-background-color: var(--bg-white);
-margin-bottom: var(--space-4);
-}
-
-.hero p {
-   color: var(--text-light);
-   max-width: 600px;
-   margin: 0 auto;
-              }
-
-.content-section {
-     width: 90%;
-     max-width: 1100px;
-     margin: 0 auto var(--space-6) auto;
-   }
-
-/* MULTI-COLUMN SECTION (CSS Grid) */
-.card-grid {
-  display: grid;
-  grid-template-columns:1fr; /* Default mobile single column*/
-  gap: var(--space-3); /* 24px gutter */
-}
-
-.card {
-  background-color: var(--bg-white);
-  padding: var(--space-3); /*24px internal padding*/
-  border-radius: var(--space-1);
-  border: 1px solid #e5e7eb;
-}
-
-.footer {
-     text-align: center;
-     padding: var(--space-3);
-     color var(--text-light);
-     font-size: 0.875rem
-}
-
-  /*==============================================================================================================
-  3.   RESPONSIVENESS BREAKPOINTS
-  ===============================================================================================================*/
-
-  /*Mobile Base View: Covered by default styles down to 320px*/
-  @media (min-width: 320px) {
-    body {
-        font-size: 14px;
-    }
-  }
-  /* Tablet View Breakpoint: 768px */
-  @media (min-width: 768px) {
-      body {
-          font-size: 16px;
-      }
-
-      /* Change Grid to 2 columns on tablets */
-      card-grid {
-           grid-template-columns: repeat(2, 1fr);
-      }
-  }
-
-  /* DesktopView Breakpoint: 1024px */
-  @media (min-width: 1024px){
-    /* ChangeGrid to 3 columns on desktops */
-     card-grid {
-         grid-template-columns: repeat (3, 1fr);
-    }
-
-    hero h1 {
-        font-size: 2.5rem:
-    }
-}
       
   
