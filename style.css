@@ -1,3 +1,65 @@
+/* Consistent Color Palette (Passes WCAG AA 4.5:1+ contrast) */
+:root {
+  --bg-page: #ffffff
+  --bg-card: #f4f6f8;
+  --text-main: #1a1a1a;      /* 17.4:1 contrast on white */
+  --primary-accent: #0056b3; /* 7.0:1 contrast with white text */
+  --error-red: #b30000;      /* 7.3:1 contrast with light backgrounds */
+  --border-color: #595959    /* 7.0:1 contrast for visible input borders */
+}
+
+body{
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  font-family: system-ui, sans-serif;
+}
+
+/*Gestalt: Proximity (tight spacing inside group, larger spacing between groups) */
+.form-group{
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.35rem
+}
+
+/* Gestalt: Similarity (all inputs share identical styling */
+input, textarea {
+  padding: 0.65rem;
+  border: 2px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.error-message {
+  color: var(--error-red);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 0.35rem;
+  min-height: 1.2rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-accent);
+  color #ffffff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem
+  cursor: pointer;
+}
+    
 /* Base & Typography (Type Selectors) */
 *{
   box-sizing: border-box;
