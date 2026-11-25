@@ -32,7 +32,63 @@
      <span class="question-badge">Q1</span>
      <span class=question-type">Open response</span>
   </div>
+ <section="contact-section">
+   <h1>Contact Me<h1>
+    <form id"contact-form" novalidate>
+  
+<!-- Fieldset & Legend group related inputs (Gestalt: Enclosure& Proximity)-->
+  <fieldset class="form-group">
+    <legend>Your Contact Information</legend>
 
+    <div class="input-wrapper">
+      <label for"full name">Full Name <span aria-hidden="true">*</span></label>
+      <input
+        type="text"
+        id="full-name"
+        name="full-name"
+        required
+        aria-required="true"
+        aria-descibedby="name-error"
+       />
+  <!-- Accessible error message linked via aria-describedby -->
+  <span id="name-error" class="error-message" role="alert" aria-live="polite"></span>
+  </div>
+
+  <div class="input-wrapper">
+    <label for="email">Email Address </span aria-hidden="true">
+    <input>
+     type="email"
+     id="email"
+     name="email"
+     required
+     aria-required="true"
+     aria-describedby="email-error"
+    />
+    <span id=email-error" class="error message" role="alert" aria-live="polite"></span>
+  </div>
+</fieldset>
+
+<fieldset class="form-group">
+  <legend>Message Details</legend>
+
+<div class="input-wrapper">
+  <label for="message">Your Message<span aria-hidden="true">*</span><label>
+  <textarea
+     id="message"
+     name="message"
+     rows="5"
+     required
+     aria-required="true"
+     aria-describedby="message-error"
+   ></textarea>
+   <span id="message-error" class="error-message" role="alert" aria-live="polite"></span>
+  </div>
+  </fieldset>
+
+  <button type="submit" class="btn-primary">end Message</button>
+</form>
+  </section>
+  </main>
   <p class=intro-text">
     Apply CSS to your Milestone 1 skeleton andmake it fully responsive. Three deliverables:
   </p>
