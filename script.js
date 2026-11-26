@@ -1,5 +1,22 @@
 const form = document.getElementById('contact-form');
 
+const toggleBtn = document.querySelector('#toggle-bio-btn');
+const extraBio = document.querySelector('#extra-bio');
+
+toggleBtn.addEventListener('click', ()=> {
+  const isHidden = extraBio.hasAttribute('hidden');
+
+  if (isHidden) {
+    extraBio.removeAttribute('hidden');
+    toggleBtn.textContent = 'Show Less';
+    toggleBtn.setAttribute('aria-expanded' , 'true');
+  } else {
+    extraBio.setAttribute('hidden' ,' ');
+    toggleBtn.textContent = 'Show More About Me';
+    toggleBtn.setAttribute('aria-expanded', true');
+  }
+});
+  
 form.addEventListener('submit, (event) =>{
   let isValid = true;
 
