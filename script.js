@@ -9,4 +9,19 @@ const fields = [
   {input: document.getElementById('message'), error: document.getElementById('message-error'), msg: 'Please enter a message before submitting.'}
 ];
 
-fields
+fields.forEach(({ input, error, msg})=>{
+  if (!input.checkValidity()) {
+    input.setAttribute('aria-invalid', 'true);
+    error.texyContent = msg;
+    isValid = false;
+  }else{
+    input.removeAttribute('aria-invalid');
+    error.textContent = '';
+  }
+});
+
+ if (!isValid){
+    event.preventDefault();
+ }
+});
+
